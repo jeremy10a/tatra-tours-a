@@ -306,14 +306,10 @@ a:hover {
 .hero-placeholder {
     width: 100%;
     height: 300px;
-    background: linear-gradient(45deg, var(--sage-green), var(--primary-green));
+    background: linear-gradient(rgba(44, 85, 48, 0.4), rgba(26, 63, 26, 0.6)), 
+                url('https://images.unsplash.com/photo-1464822759844-d150baec89b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover;
     border-radius: var(--radius-xl);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--snow-white);
-    font-weight: var(--font-weight-medium);
-    font-size: 1.1rem;
+    box-shadow: var(--shadow-xl);
 }
 
 /* Page Header */
@@ -430,9 +426,8 @@ a:hover {
 }
 
 .image-placeholder {
-    color: var(--snow-white);
-    font-weight: var(--font-weight-medium);
-    font-size: 1.1rem;
+    background: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover;
+    position: relative;
 }
 
 .feature-content {
@@ -1411,14 +1406,10 @@ a:hover {
 .tour-hero-image .image-placeholder {
     width: 100%;
     height: 300px;
-    background: linear-gradient(45deg, var(--sage-green), var(--primary-green));
+    background: linear-gradient(rgba(74, 107, 138, 0.3), rgba(168, 197, 224, 0.4)), 
+                url('https://images.unsplash.com/photo-1551524164-687a55dd1126?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover;
     border-radius: var(--radius-xl);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--snow-white);
-    font-weight: var(--font-weight-medium);
-    font-size: 1.1rem;
+    box-shadow: var(--shadow-lg);
 }
 
 /* Tour Overview */
@@ -1584,6 +1575,37 @@ a:hover {
     color: var(--text-dark);
 }
 
+/* Specific image variations */
+.winter-image {
+    background: linear-gradient(rgba(74, 107, 138, 0.2), rgba(168, 197, 224, 0.3)), 
+                url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+}
+
+.summer-image {
+    background: linear-gradient(rgba(135, 169, 107, 0.2), rgba(44, 85, 48, 0.3)), 
+                url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+}
+
+.cultural-image {
+    background: linear-gradient(rgba(139, 105, 20, 0.2), rgba(44, 85, 48, 0.3)), 
+                url('https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+}
+
+.lake-image {
+    background: linear-gradient(rgba(74, 107, 138, 0.1), rgba(168, 197, 224, 0.2)), 
+                url('https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+}
+
+.lodge-image {
+    background: linear-gradient(rgba(139, 105, 20, 0.3), rgba(44, 85, 48, 0.4)), 
+                url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+}
+
+.food-image {
+    background: linear-gradient(rgba(139, 105, 20, 0.2), rgba(44, 85, 48, 0.3)), 
+                url('https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+}
+
 /* Gallery */
 .tour-gallery {
     padding: var(--space-3xl) 0;
@@ -1614,13 +1636,8 @@ a:hover {
 
 .gallery-item .image-placeholder {
     height: 200px;
-    background: linear-gradient(45deg, var(--mountain-blue), var(--sky-blue));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--snow-white);
-    font-weight: var(--font-weight-medium);
-    font-size: 1rem;
+    background: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover;
+    position: relative;
 }
 
 /* Booking CTA */
@@ -1970,14 +1987,10 @@ a:hover {
 .story-image .image-placeholder {
     width: 100%;
     height: 300px;
-    background: linear-gradient(45deg, var(--sage-green), var(--primary-green));
+    background: linear-gradient(rgba(44, 85, 48, 0.2), rgba(26, 63, 26, 0.4)), 
+                url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover;
     border-radius: var(--radius-xl);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--snow-white);
-    font-weight: var(--font-weight-medium);
-    font-size: 1.1rem;
+    box-shadow: var(--shadow-md);
 }
 
 .about-mission {
@@ -2053,8 +2066,8 @@ a:hover {
 .photo-placeholder {
     width: 100px;
     height: 100px;
-    background-color: var(--primary-green);
-    color: var(--snow-white);
+    background: linear-gradient(rgba(44, 85, 48, 0.8), rgba(44, 85, 48, 0.9)), 
+                url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80') center/cover;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2062,6 +2075,8 @@ a:hover {
     font-size: 2rem;
     font-weight: var(--font-weight-bold);
     margin: 0 auto;
+    color: var(--snow-white);
+    box-shadow: var(--shadow-md);
 }
 
 .member-info h3 {
@@ -2138,14 +2153,10 @@ a:hover {
 .sustainability-image .image-placeholder {
     width: 100%;
     height: 300px;
-    background: linear-gradient(45deg, var(--mountain-blue), var(--sky-blue));
+    background: linear-gradient(rgba(74, 107, 138, 0.3), rgba(168, 197, 224, 0.5)), 
+                url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover;
     border-radius: var(--radius-xl);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--snow-white);
-    font-weight: var(--font-weight-medium);
-    font-size: 1.1rem;
+    box-shadow: var(--shadow-md);
 }
 
 .awards-certifications {

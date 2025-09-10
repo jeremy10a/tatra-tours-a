@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize all components
     initNavigation();
     initScrollEffects();
-    initLazyLoading();
+    initImageOptimization();
     initAnimations();
 });
 
@@ -66,41 +66,21 @@ function initScrollEffects() {
     });
 }
 
-// Lazy loading for images (placeholder implementation)
-function initLazyLoading() {
-    const imagePlaceholders = document.querySelectorAll('.image-placeholder, .hero-placeholder');
+// Image optimization for performance
+function initImageOptimization() {
+    const images = document.querySelectorAll('.image-placeholder, .hero-placeholder');
     
-    // Add loading animation to placeholders
-    imagePlaceholders.forEach(placeholder => {
-        placeholder.style.position = 'relative';
-        placeholder.style.overflow = 'hidden';
+    // Add loading optimization
+    images.forEach(imageDiv => {
+        // Add subtle fade-in effect when images load
+        imageDiv.style.opacity = '0';
+        imageDiv.style.transition = 'opacity 0.5s ease';
         
-        // Add shimmer effect
-        const shimmer = document.createElement('div');
-        shimmer.style.cssText = `
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            animation: shimmer 2s infinite;
-        `;
-        placeholder.appendChild(shimmer);
+        // Fade in after a short delay to simulate loading
+        setTimeout(() => {
+            imageDiv.style.opacity = '1';
+        }, Math.random() * 500 + 200);
     });
-    
-    // Add shimmer animation to CSS if not already present
-    if (!document.querySelector('#shimmer-style')) {
-        const style = document.createElement('style');
-        style.id = 'shimmer-style';
-        style.textContent = `
-            @keyframes shimmer {
-                0% { left: -100%; }
-                100% { left: 100%; }
-            }
-        `;
-        document.head.appendChild(style);
-    }
 }
 
 // Smooth scrolling animations
