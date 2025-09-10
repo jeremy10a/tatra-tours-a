@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Tatra Tours</title>
+    <meta name="description" content="Book your Tatra Mountains adventure today. Secure online booking with instant confirmation for all our Slovakia mountain tours.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><h2>Tatra Tours</h2></a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="tours.html" class="nav-link">Tours</a>
+                <a href="reservations.html" class="nav-link active">Reservations</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Home</a> / <span>Reservations</span>
+        </div>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Book Your Adventure</h1>
+                <p>Secure your spot on one of our incredible Tatra Mountains tours. Fill out the form below and we'll confirm your booking within 24 hours.</p>
+            </div>
+        </section>
+
+        <section class="booking-section">
+            <div class="container">
+                <div class="booking-layout">
+                    <div class="booking-form-container">
+                        <div class="form-header">
+                            <h2>Reservation Details</h2>
+                            <p>All fields marked with * are required</p>
+                        </div>
+
+                        <form id="bookingForm" class="booking-form">
+                            <div class="form-section">
+                                <h3>Tour Selection</h3>
+                                <div class="form-group">
+                                    <label for="tourSelection">Choose Your Tour *</label>
+                                    <select id="tourSelection" name="tourSelection" required>
+                                        <option value="">Select a tour...</option>
+                                        <option value="winter-walking" data-price="967" data-currency="USD">Winter Walking and Activity Holiday (5 days) - $967</option>
+                                        <option value="wellness-retreat" data-price="1340" data-currency="USD">Winter Wellness Retreat (5 days) - $1,340</option>
+                                        <option value="mountain-escape" data-price="1187" data-currency="EUR">High Tatras Mountain Escape (6 days) - €1,187</option>
+                                        <option value="all-seasons" data-price="1465" data-currency="EUR">High Tatras All Seasons (7 days) - €1,465</option>
+                                        <option value="hut-to-hut" data-price="0" data-currency="USD">Hut-to-Hut Self-Guided Trek (7+ days) - Contact for pricing</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tourDate">Preferred Start Date *</label>
+                                    <input type="date" id="tourDate" name="tourDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="participants">Number of Participants *</label>
+                                    <select id="participants" name="participants" required>
+                                        <option value="">Select...</option>
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5 People</option>
+                                        <option value="6">6 People</option>
+                                        <option value="7+">7+ People (Group booking)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Lead Traveler Information</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name *</label>
+                                        <input type="text" id="firstName" name="firstName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name *</label>
+                                        <input type="text" id="lastName" name="lastName" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="country">Country *</label>
+                                        <select id="country" name="country" required>
+                                            <option value="">Select your country...</option>
+                                            <option value="Slovakia">Slovakia</option>
+                                            <option value="Czech Republic">Czech Republic</option>
+                                            <option value="Poland">Poland</option>
+                                            <option value="Hungary">Hungary</option>
+                                            <option value="Austria">Austria</option>
+                                            <option value="Germany">Germany</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="United States">United States</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="Australia">Australia</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="age">Age *</label>
+                                        <input type="number" id="age" name="age" min="18" max="100" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Additional Information</h3>
+                                <div class="form-group">
+                                    <label for="experience">Hiking Experience Level *</label>
+                                    <select id="experience" name="experience" required>
+                                        <option value="">Select your level...</option>
+                                        <option value="beginner">Beginner - New to hiking</option>
+                                        <option value="intermediate">Intermediate - Regular hiking experience</option>
+                                        <option value="advanced">Advanced - Extensive mountain experience</option>
+                                        <option value="expert">Expert - Professional/guide level</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dietary">Dietary Requirements</label>
+                                    <textarea id="dietary" name="dietary" rows="3" placeholder="Please specify any dietary restrictions, allergies, or special meal requirements..."></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="medical">Medical Information</label>
+                                    <textarea id="medical" name="medical" rows="3" placeholder="Please mention any medical conditions, medications, or physical limitations we should be aware of..."></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="specialRequests">Special Requests</label>
+                                    <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="Any special occasions, accommodation preferences, or other requests..."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Emergency Contact</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="emergencyName">Emergency Contact Name *</label>
+                                        <input type="text" id="emergencyName" name="emergencyName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emergencyPhone">Emergency Contact Phone *</label>
+                                        <input type="tel" id="emergencyPhone" name="emergencyPhone" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="emergencyRelation">Relationship *</label>
+                                    <input type="text" id="emergencyRelation" name="emergencyRelation" placeholder="e.g., Spouse, Parent, Sibling" required>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
+                                        <span class="checkmark"></span>
+                                        I agree to the <a href="terms-conditions.html" target="_blank">Terms & Conditions</a> and <a href="booking-conditions.html" target="_blank">Booking Conditions</a> *
+                                    </label>
+                                </div>
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="newsletter" name="newsletter">
+                                        <span class="checkmark"></span>
+                                        I would like to receive updates about new tours and special offers
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-large">
+                                    <span class="btn-text">Submit Reservation</span>
+                                    <span class="btn-loading" style="display: none;">Processing...</span>
+                                </button>
+                                <p class="form-note">Your reservation will be confirmed within 24 hours. You will receive a confirmation email with payment instructions.</p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="booking-summary">
+                        <div class="summary-card">
+                            <h3>Booking Summary</h3>
+                            <div id="summaryContent">
+                                <p>Select a tour to see pricing details</p>
+                            </div>
+                            <div class="security-badges">
+                                <div class="badge-item">
+                                    <span class="badge-icon">🔒</span>
+                                    <span>Secure SSL Encryption</span>
+                                </div>
+                                <div class="badge-item">
+                                    <span class="badge-icon">✅</span>
+                                    <span>Instant Confirmation</span>
+                                </div>
+                                <div class="badge-item">
+                                    <span class="badge-icon">🛡️</span>
+                                    <span>Fully Insured Tours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="help-card">
+                            <h4>Need Help?</h4>
+                            <p>Our travel experts are here to assist you with your booking.</p>
+                            <div class="contact-options">
+                                <a href="tel:+421xxxxxxxxx" class="contact-option">
+                                    <span class="icon">📞</span>
+                                    <span>+421 xxx xxx xxx</span>
+                                </a>
+                                <a href="mailto:info@tatratours.sk" class="contact-option">
+                                    <span class="icon">✉️</span>
+                                    <span>info@tatratours.sk</span>
+                                </a>
+                                <a href="contact.html" class="contact-option">
+                                    <span class="icon">💬</span>
+                                    <span>Live Chat</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="confirmationModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Booking Confirmation</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="success-message">
+                        <div class="success-icon">✅</div>
+                        <h3>Thank You for Your Booking!</h3>
+                        <p>Your reservation has been successfully submitted.</p>
+                        <div id="bookingDetails"></div>
+                        <p>You will receive a confirmation email within 24 hours with payment instructions and detailed tour information.</p>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <a href="../index.html" class="btn btn-primary">Return to Home</a>
+                    <a href="tours.html" class="btn btn-outline">Browse More Tours</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tatra Tours</h3>
+                    <p>Your gateway to Slovakia's most beautiful mountain experiences.</p>
+                    <div class="contact-info">
+                        <p>📍 Poprad, Slovakia</p>
+                        <p>📞 +421 xxx xxx xxx</p>
+                        <p>✉️ info@tatratours.sk</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Tours</h4>
+                    <ul>
+                        <li><a href="tour-winter-walking.html">Winter Walking Holiday</a></li>
+                        <li><a href="tour-wellness-retreat.html">Wellness Retreat</a></li>
+                        <li><a href="tour-mountain-escape.html">Mountain Escape</a></li>
+                        <li><a href="tour-all-seasons.html">All Seasons Holiday</a></li>
+                        <li><a href="tour-hut-to-hut.html">Hut-to-Hut Trek</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="booking-conditions.html">Booking Conditions</a></li>
+                        <li><a href="cancellation-policy.html">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tatra Tours. All rights reserved. | Designed for adventure seekers worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/booking.js"></script>
+</body>
+</html>

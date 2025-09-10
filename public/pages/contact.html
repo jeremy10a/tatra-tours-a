@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tatra Tours</title>
+    <meta name="description" content="Get in touch with Tatra Tours. Contact us for personalized tour advice, bookings, or any questions about Slovakia's High Tatras adventures.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><h2>Tatra Tours</h2></a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="tours.html" class="nav-link">Tours</a>
+                <a href="reservations.html" class="nav-link">Reservations</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Home</a> / <span>Contact</span>
+        </div>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Tatra Tours</h1>
+                <p>Get in touch with our travel experts for personalized advice and support for your Slovak mountain adventure.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <div class="info-header">
+                            <h2>Get In Touch</h2>
+                            <p>We're here to help you plan the perfect Tatra Mountains experience. Reach out to us through any of the following methods.</p>
+                        </div>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">📞</div>
+                                <div class="method-content">
+                                    <h3>Phone</h3>
+                                    <p><a href="tel:+421xxxxxxxxx">+421 xxx xxx xxx</a></p>
+                                    <small>Mon-Fri: 9:00 AM - 6:00 PM CET<br>Sat-Sun: 10:00 AM - 4:00 PM CET</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">✉️</div>
+                                <div class="method-content">
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:info@tatratours.sk">info@tatratours.sk</a></p>
+                                    <small>We'll respond within 24 hours</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">📍</div>
+                                <div class="method-content">
+                                    <h3>Office</h3>
+                                    <p>Tatra Tours s.r.o.<br>
+                                    Sobotské námestie 1<br>
+                                    058 01 Poprad, Slovakia</p>
+                                    <small>Visits by appointment only</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">💬</div>
+                                <div class="method-content">
+                                    <h3>Live Chat</h3>
+                                    <p>Chat with our travel experts</p>
+                                    <button class="btn btn-primary btn-sm">Start Chat</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="emergency-contact">
+                            <h3>Emergency Contact</h3>
+                            <p>For guests currently on tour experiencing emergencies:</p>
+                            <p><strong>24/7 Emergency Line:</strong> <a href="tel:+421xxxxxxxxx">+421 xxx xxx xxx</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <form id="contactForm" class="contact-form">
+                            <h2>Send Us a Message</h2>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contactFirstName">First Name *</label>
+                                    <input type="text" id="contactFirstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactLastName">Last Name *</label>
+                                    <input type="text" id="contactLastName" name="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number</label>
+                                <input type="tel" id="contactPhone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactSubject">Subject *</label>
+                                <select id="contactSubject" name="subject" required>
+                                    <option value="">Select a subject...</option>
+                                    <option value="general-inquiry">General Inquiry</option>
+                                    <option value="booking-question">Booking Question</option>
+                                    <option value="tour-information">Tour Information</option>
+                                    <option value="custom-tour">Custom Tour Request</option>
+                                    <option value="group-booking">Group Booking</option>
+                                    <option value="existing-booking">Existing Booking</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="media-partnership">Media/Partnership</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="interestedTours">Interested Tours (Optional)</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tours" value="winter-walking">
+                                        <span class="checkmark"></span>
+                                        Winter Walking Holiday
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tours" value="wellness-retreat">
+                                        <span class="checkmark"></span>
+                                        Winter Wellness Retreat
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tours" value="mountain-escape">
+                                        <span class="checkmark"></span>
+                                        High Tatras Mountain Escape
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tours" value="all-seasons">
+                                        <span class="checkmark"></span>
+                                        All Seasons Holiday
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tours" value="hut-to-hut">
+                                        <span class="checkmark"></span>
+                                        Hut-to-Hut Trek
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactMessage">Message *</label>
+                                <textarea id="contactMessage" name="message" rows="6" required placeholder="Please provide details about your inquiry, preferred dates, group size, or any specific questions you have..."></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="contactNewsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    I would like to receive updates about new tours and special offers
+                                </label>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-large">
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-loading" style="display: none;">Sending...</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>What's included in tour prices?</h3>
+                        <p>All our tours include professional mountain guides, accommodation, most meals (breakfast and dinner), transportation during the tour, safety equipment, and comprehensive insurance. Lunch and personal expenses are typically not included.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What fitness level is required?</h3>
+                        <p>Our tours cater to different fitness levels. Winter walking holidays are suitable for beginners, while hut-to-hut treks require good physical condition. Each tour page includes detailed difficulty information.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What should I bring?</h3>
+                        <p>We provide detailed packing lists for each tour. Generally, you'll need appropriate outdoor clothing, hiking boots, and personal items. We provide technical equipment like snow shoes and safety gear.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I book for just one person?</h3>
+                        <p>Absolutely! We welcome solo travelers and can often arrange shared accommodation. Single supplements may apply for private rooms.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What's your cancellation policy?</h3>
+                        <p>Cancellations made more than 30 days before departure receive full refund. Different terms apply for cancellations within 30 days. Travel insurance is recommended.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you offer group discounts?</h3>
+                        <p>Yes! Groups of 8 or more people receive special pricing. Contact us for a custom quote and potential additional discounts for larger groups.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tatra Tours</h3>
+                    <p>Your gateway to Slovakia's most beautiful mountain experiences.</p>
+                    <div class="contact-info">
+                        <p>📍 Poprad, Slovakia</p>
+                        <p>📞 +421 xxx xxx xxx</p>
+                        <p>✉️ info@tatratours.sk</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Tours</h4>
+                    <ul>
+                        <li><a href="tour-winter-walking.html">Winter Walking Holiday</a></li>
+                        <li><a href="tour-wellness-retreat.html">Wellness Retreat</a></li>
+                        <li><a href="tour-mountain-escape.html">Mountain Escape</a></li>
+                        <li><a href="tour-all-seasons.html">All Seasons Holiday</a></li>
+                        <li><a href="tour-hut-to-hut.html">Hut-to-Hut Trek</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="booking-conditions.html">Booking Conditions</a></li>
+                        <li><a href="cancellation-policy.html">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tatra Tours. All rights reserved. | Designed for adventure seekers worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
