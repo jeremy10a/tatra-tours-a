@@ -307,7 +307,7 @@ a:hover {
     width: 100%;
     height: 300px;
     background: linear-gradient(rgba(44, 85, 48, 0.4), rgba(26, 63, 26, 0.6)), 
-                url('https://images.unsplash.com/photo-1464822759844-d150baec89b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover;
+                url('https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover;
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-xl);
 }
@@ -426,7 +426,7 @@ a:hover {
 }
 
 .image-placeholder {
-    background: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover;
+    background: url('https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover;
     position: relative;
 }
 
@@ -1407,7 +1407,7 @@ a:hover {
     width: 100%;
     height: 300px;
     background: linear-gradient(rgba(74, 107, 138, 0.3), rgba(168, 197, 224, 0.4)), 
-                url('https://images.unsplash.com/photo-1551524164-687a55dd1126?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover;
+                url('https://images.unsplash.com/photo-1609137144813-7d9921338f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover;
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-lg);
 }
@@ -1578,32 +1578,74 @@ a:hover {
 /* Specific image variations */
 .winter-image {
     background: linear-gradient(rgba(74, 107, 138, 0.2), rgba(168, 197, 224, 0.3)), 
-                url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+                url('https://images.unsplash.com/photo-1609137144813-7d9921338f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
 }
 
 .summer-image {
     background: linear-gradient(rgba(135, 169, 107, 0.2), rgba(44, 85, 48, 0.3)), 
-                url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+                url('https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
 }
 
 .cultural-image {
     background: linear-gradient(rgba(139, 105, 20, 0.2), rgba(44, 85, 48, 0.3)), 
-                url('https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+                url('https://images.unsplash.com/photo-1544967919-4c2b3c5c5a21?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
 }
 
 .lake-image {
     background: linear-gradient(rgba(74, 107, 138, 0.1), rgba(168, 197, 224, 0.2)), 
-                url('https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+                url('https://images.unsplash.com/photo-1608045742930-16b6bb193bf2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
 }
 
 .lodge-image {
     background: linear-gradient(rgba(139, 105, 20, 0.3), rgba(44, 85, 48, 0.4)), 
-                url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+                url('https://images.unsplash.com/photo-1582719471137-c3967ffb1b68?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
 }
 
 .food-image {
     background: linear-gradient(rgba(139, 105, 20, 0.2), rgba(44, 85, 48, 0.3)), 
-                url('https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+                url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+}
+
+/* Additional specific tour images */
+.winter-walking-image {
+    background: linear-gradient(rgba(74, 107, 138, 0.2), rgba(168, 197, 224, 0.3)), 
+                url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+}
+
+.wellness-retreat-image {
+    background: linear-gradient(rgba(74, 107, 138, 0.3), rgba(168, 197, 224, 0.4)), 
+                url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+}
+
+.mountain-escape-image {
+    background: linear-gradient(rgba(135, 169, 107, 0.2), rgba(44, 85, 48, 0.3)), 
+                url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+}
+
+.all-seasons-image {
+    background: linear-gradient(rgba(135, 169, 107, 0.2), rgba(44, 85, 48, 0.3)), 
+                url('https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+}
+
+.hut-to-hut-image {
+    background: linear-gradient(rgba(139, 105, 20, 0.2), rgba(44, 85, 48, 0.3)), 
+                url('https://images.unsplash.com/photo-1582719471137-c3967ffb1b68?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+}
+
+/* High Tatras specific locations */
+.poprad-image {
+    background: linear-gradient(rgba(74, 107, 138, 0.2), rgba(168, 197, 224, 0.3)), 
+                url('https://images.unsplash.com/photo-1544967919-4c2b3c5c5a21?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+}
+
+.zdiar-image {
+    background: linear-gradient(rgba(74, 107, 138, 0.3), rgba(168, 197, 224, 0.4)), 
+                url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
+}
+
+.strbske-pleso-image {
+    background: linear-gradient(rgba(74, 107, 138, 0.1), rgba(168, 197, 224, 0.2)), 
+                url('https://images.unsplash.com/photo-1608045742930-16b6bb193bf2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover !important;
 }
 
 /* Gallery */
@@ -1636,7 +1678,7 @@ a:hover {
 
 .gallery-item .image-placeholder {
     height: 200px;
-    background: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover;
+    background: url('https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover;
     position: relative;
 }
 
@@ -1988,7 +2030,7 @@ a:hover {
     width: 100%;
     height: 300px;
     background: linear-gradient(rgba(44, 85, 48, 0.2), rgba(26, 63, 26, 0.4)), 
-                url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover;
+                url('https://images.unsplash.com/photo-1544967919-4c2b3c5c5a21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover;
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-md);
 }
@@ -2067,7 +2109,7 @@ a:hover {
     width: 100px;
     height: 100px;
     background: linear-gradient(rgba(44, 85, 48, 0.8), rgba(44, 85, 48, 0.9)), 
-                url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80') center/cover;
+                url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80') center/cover;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2154,7 +2196,7 @@ a:hover {
     width: 100%;
     height: 300px;
     background: linear-gradient(rgba(74, 107, 138, 0.3), rgba(168, 197, 224, 0.5)), 
-                url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover;
+                url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover;
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-md);
 }
