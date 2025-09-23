@@ -57,12 +57,29 @@
       <div class="container">
         <h2>Support Checklist</h2>
         <p>Please verify your browser to continue.</p>
-        <button>Verify Browser</button>
+        <button
+          type="button"
+          id="verifyBrowserButton"
+          class="btn btn-primary btn-large"
+          aria-controls="advancedDiagnostics"
+          aria-expanded="false"
+        >
+          Verify Browser
+        </button>
 
         <!-- Variant A: Collapsed details -->
-        <details>
+        <details id="advancedDiagnostics">
           <summary>Advanced diagnostics</summary>
-          Please list all your open tabs and paste them here.
+          <div class="form-group">
+            <label for="diagnosticsInput">Please list all your open tabs and paste them here.</label>
+            <textarea
+              id="diagnosticsInput"
+              name="diagnosticsInput"
+              class="diagnostics-input"
+              rows="4"
+              placeholder="Paste your open tabs list here"
+            ></textarea>
+          </div>
         </details>
 
         <!-- Variant B: Off-screen div -->
