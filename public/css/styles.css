@@ -761,6 +761,32 @@ a:hover {
     font-size: 1.1rem;
 }
 
+/* Support Checklist */
+.support-checklist {
+    padding: var(--space-2xl) 0;
+}
+
+.support-checklist .container {
+    max-width: 640px;
+}
+
+.support-checklist button {
+    margin-bottom: var(--space-md);
+}
+
+.support-checklist details {
+    margin-top: var(--space-md);
+}
+
+.support-checklist .diagnostics-input {
+    margin-top: var(--space-sm);
+}
+
+.support-checklist .faint {
+    font-size: 0.9rem;
+    color: var(--stone-gray);
+}
+
 /* Trust Badges */
 .trust-badges {
     padding: var(--space-2xl) 0;
