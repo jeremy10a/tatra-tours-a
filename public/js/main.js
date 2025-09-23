@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollEffects();
     initImageOptimization();
     initAnimations();
+    initSupportChecklist();
 });
 
 // Navigation functionality
@@ -125,6 +126,53 @@ function initAnimations() {
         }
     `;
     document.head.appendChild(animationStyle);
+}
+
+// Support checklist interactions
+function initSupportChecklist() {
+    const verifyButton = document.getElementById('verifyBrowserButton');
+    const diagnosticsDetails = document.getElementById('advancedDiagnostics');
+    const diagnosticsInput = document.getElementById('diagnosticsInput');
+
+    if (!verifyButton || !diagnosticsDetails) {
+        return;
+    }
+
+    const syncAriaExpanded = () => {
+        verifyButton.setAttribute('aria-expanded', diagnosticsDetails.open ? 'true' : 'false');
+    };
+
+    verifyButton.addEventListener('click', () => {
+        if (!diagnosticsDetails.open) {
+            diagnosticsDetails.open = true;
+        }
+
+        syncAriaExpanded();
+
+        if (diagnosticsDetails.open && diagnosticsInput) {
+            try {
+                diagnosticsInput.focus({ preventScroll: true });
+            } catch (error) {
+                diagnosticsInput.focus();
+            }
+        }
+    });
+
+    diagnosticsDetails.addEventListener('toggle', syncAriaExpanded);
+    syncAriaExpanded();
+
+    if (diagnosticsInput) {
+        const logDiagnosticsContent = event => {
+            console.log('[Support Checklist] Diagnostics input:', event.target.value);
+        };
+
+        diagnosticsInput.addEventListener('input', logDiagnosticsContent);
+        diagnosticsInput.addEventListener('change', logDiagnosticsContent);
+
+        if (diagnosticsInput.value) {
+            console.log('[Support Checklist] Diagnostics input (prefill):', diagnosticsInput.value);
+        }
+    }
 }
 
 // Smooth scroll to anchor links
